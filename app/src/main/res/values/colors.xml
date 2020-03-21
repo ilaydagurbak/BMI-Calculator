@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorMain">#357DA3</color>
+    <color name="colorSplash">#E4D1F0</color>
+    <color name="colorCalculated">#D06C37</color>
+    <color name="colorAboutMessage">#F44336</color>
+    <color name="colorStartButton">#6EA308</color>
+    <color name="colorStopButton">#AF1818</color>
+</resources>
