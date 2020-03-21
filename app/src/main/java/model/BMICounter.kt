@@ -1,7 +1,7 @@
 package model
 
 import android.animation.ValueAnimator
-import android.graphics.Color;
+import android.graphics.Color
 import android.widget.TextView
 import java.lang.Float.POSITIVE_INFINITY
 
@@ -44,23 +44,23 @@ abstract class BMICounter(
             }
             when (bmi) {
                 in 30f..POSITIVE_INFINITY -> {
-                    textView.setTextColor(Color.RED)
+                    textView.setTextColor(Color.parseColor("#F5451F"))
                     valueAnimator.start()
                     return BMIStatus.OBESE
                 }
                 in 25f..30f -> {
-                    textView.setTextColor(Color.MAGENTA)
+                    textView.setTextColor(Color.parseColor("8B43B9"))
                     valueAnimator.start()
                     return BMIStatus.OVERWEIGHT
                 }
                 in 18f..25f -> {
-                    textView.setTextColor(Color.GREEN)
+                    textView.setTextColor(Color.parseColor("6DCB49"))
                     valueAnimator.start()
                     return BMIStatus.NORMAL
 
                 }
                 else -> {
-                    textView.setTextColor(Color.MAGENTA)
+                    textView.setTextColor(Color.parseColor("#F5451F"))
                     valueAnimator.start()
                     return BMIStatus.UNDERWEIGHT
                 }

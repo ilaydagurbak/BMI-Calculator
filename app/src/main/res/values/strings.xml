@@ -21,4 +21,5 @@
     <string name="cm_height_value">cm</string>
     <string name="lb_weight_value">lb</string>
     <string name="in_height_value">in</string>
+    <string name="my_photo">my_photo</string>
 </resources>

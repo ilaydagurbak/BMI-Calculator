@@ -2,7 +2,6 @@ package model
 
 import com.example.myapplication.R
 
-
 enum class BMICounterType(
     val weightDescriptionId: Int,
     val heightDescriptionId: Int

@@ -14,13 +14,15 @@
             android:id="@mipmap/ic_launcher_round"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/bmi_icon"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/my_photo"
+            app:srcCompat="@drawable/profile_pic"/>
 
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ilayda Gürbak"
+            android:text='@string/ilayda_gurbak'
             android:textColor="#FFFFFF"
             android:textStyle="bold"/>
 

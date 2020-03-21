@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             heightWatcher()
         }
 
-        bmi_switch.setOnClickListener {
+        bmi_switch.setOnClickListener(){
             switchClickListener()
         }
 
