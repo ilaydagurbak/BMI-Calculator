@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             heightWatcher()
         }
 
-        bmi_switch.setOnClickListener(){
+        bmi_switch.setOnCheckedChangeListener { _: CompoundButton, _: Boolean ->
             switchClickListener()
         }
 
@@ -140,8 +141,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun setCalculatorType(bmiCalculatorType: BMICounterType) {
         this.bmiCounterType = bmiCalculatorType
         this.bmiCounter = BMICounter.get(bmiCalculatorType)
-        weight_txt.setText(bmiCalculatorType.weightDescriptionId)
-        height_txt.setText(bmiCalculatorType.heightDescriptionId)
     }
 
     private fun setTextViews(bmi: Float) {
